@@ -3,9 +3,23 @@
 __author__ = "730796945"
 
 
-def flavor(word1: str, word2: str, word3: str, word4: str, word5: str) -> str:
-    """fufj"""
-    return word1 + word2 + word3 + word4 + word5
+def get_weather_report() -> str:
+    """will utilize this to determine weather report"""
+    weather = str(input("What is the weather? "))
+
+    if weather == "rainy" or weather == "cold":
+        print("bring a jacket")
+    else:
+        if weather == "hot":
+            print("Keep cool out there!")
+        else:
+            print("I dont recognize this weather")
+            return weather
+        
+
+get_weather_report()
 
 
-print(flavor(word1="This ", word2="flavor ", word3="is ", word4="100% ", word5="umami"))
+
+
+
